@@ -6,7 +6,7 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-                <PieChart data={[{label: 'Hebele', value: 20}, {label: 'Hubele', value: 30}]} />
+                <PieChart data={[{label: 'Foo', value: 20}, {label: 'Bar', value: 30}]} />
             </div>
         );
     }
