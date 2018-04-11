@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
-import sizeMe from 'react-sizeme';
 import { PieChart, LineChart, BarChart } from 'yarcl';
 import './App.css';
-
-const sizeMeHOC = sizeMe({ monitorWidth: true, monitorHeight: true });
 
 class App extends Component {
     render() {
