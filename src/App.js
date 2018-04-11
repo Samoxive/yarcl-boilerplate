@@ -14,7 +14,7 @@ class App extends Component {
                         title={'Population of largest Turkey cities (in millions)'}
                         subtitle={'according to 2015 estimates'}
                         label={['İstanbul', 'Ankara', 'İzmir', 'Bursa', 'Adana']}
-                        data={[14.0, 4.7, 2.8, 1.9, 1.6]}
+                        data={[14000000, 4700000, 2800000, 1900000, 1600000]}
                     />
                 </div>
                 <div>
@@ -36,8 +36,8 @@ class App extends Component {
                         subtitle={{text: 'in 1990, 2000, 2015'}}
                         yAxis={{title: {text: 'Population'}}}
                         plotOptions={{pointStart: 10}}
-                        width={600}
-                        height={400}
+                        width={1000}
+                        height={800}
                         series={[
                             {name: 'Russia', data: [148, 146, 144]},
                             {name: 'Germany', data: [79, 82, 81]},
