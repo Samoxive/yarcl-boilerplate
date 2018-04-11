@@ -6,7 +6,7 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-                <div>
+                <div class="chart">
                     <BarChart
                         title={'Population of largest Turkey cities (in millions)'}
                         subtitle={'according to 2015 estimates'}
@@ -14,7 +14,7 @@ class App extends Component {
                         data={[14000000, 4700000, 2800000, 1900000, 1600000]}
                     />
                 </div>
-                <div>
+                <div class="chart">
                     <PieChart
                         title={'Spread of population in top 5 districts in Kayseri '}
                         data={[
@@ -27,17 +27,18 @@ class App extends Component {
                         options={{ showPercentage: true }}
                     />
                 </div>
-                <div>
+                <div style={{margin: '8px 8px 8px 8px'}}>
                     <LineChart
-                        title={{text: 'Population of European countries by years (in millions)'}}
+                        title={{text: 'Population of some countries by years (in millions)'}}
                         subtitle={{text: 'in 1990, 2000, 2015'}}
                         yAxis={{title: {text: 'Population'}}}
                         plotOptions={{pointStart: 10}}
                         width={1000}
-                        height={800}
+                        height={400}
                         series={[
                             {name: 'Russia', data: [148, 146, 144]},
                             {name: 'Germany', data: [79, 82, 81]},
+                            {name: 'Turkey', data: [54, 63, 78] },
                             {name: 'United Kingdom', data: [57, 58, 65]}
                         ]}
                     />
