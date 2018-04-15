@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { PieChart, LineChart, BarChart } from 'yarcl';
+import { PieChart, LineChart, BarChart } from '../../yarcl';
 import './App.css';
 
 class App extends Component {
