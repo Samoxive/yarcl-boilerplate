@@ -3,9 +3,22 @@ import { PieChart, LineChart, BarChart, AreaChart } from '../../yarcl';
 import './App.css';
 
 class App extends Component {
+    state = {
+        donut: false,
+        dark: false,
+    }
+
     render() {
         return (
-            <div className="App">
+            <div className="App" style={this.state.dark ? ({background: 'black'}) : ({background: 'white'})}>
+                <div style={{margin: '8px 400px 8px 400px'}}>
+                    <button onClick={() => this.setState({...this.state, donut: !this.state.donut})}>
+                        Toggle donut/pie chart
+                    </button>
+                    <button onClick={() => this.setState({...this.state, dark: !this.state.dark})}>
+                        Toggle background
+                    </button>
+                </div>
                 <div class="chart">
                     <BarChart
                         title={'Population of largest Turkey cities (in millions)'}
@@ -24,7 +37,7 @@ class App extends Component {
                             {label: 'Develi', value: 64000},
                             {label: 'Yahyalı', value: 36000},
                         ]}
-                        options={{ showPercentage: true }}
+                        options={{ showPercentage: true, isDonut: this.state.donut }}
                     />
                 </div>
                 <div style={{margin: '8px 8px 8px 8px'}}>
