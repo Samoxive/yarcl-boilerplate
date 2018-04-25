@@ -40,7 +40,7 @@ class App extends Component {
                         options={{ showPercentage: true, isDonut: this.state.donut }}
                     />
                 </div>
-                <div style={{margin: '8px 8px 8px 8px'}}>
+                <div className="chart">
                     <LineChart
                         title={{text: 'Population of some countries by years (in millions)'}}
                         subtitle={{text: 'in 1990, 2000, 2015'}}
