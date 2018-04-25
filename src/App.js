@@ -43,17 +43,17 @@ class App extends Component {
                     </div>
                     <div className="chart">
                         <LineChart
-                            title={{text: 'Population of some countries by years (in millions)'}}
-                            subtitle={{text: 'in 1990, 2000, 2015'}}
+                            title={{text: 'Population of countries by years (in millions)'}}
+                            subtitle={{text: 'in 1950, 1965, 1980, 1995 and 2010'}}
                             yAxis={{title: {text: 'Population'}}}
                             plotOptions={{pointStart: 10}}
                             width={1000}
                             height={400}
                             series={[
-                                {name: 'Russia', data: [148, 146, 144]},
-                                {name: 'Germany', data: [79, 82, 81]},
-                                {name: 'Turkey', data: [54, 63, 78] },
-                                {name: 'United Kingdom', data: [57, 58, 65]}
+                                {name: 'Turkey', data: [21, 30, 43, 58, 71]},
+                                {name: 'Germany', data: [69, 75, 78, 81, 80]},
+                                {name: 'Canada', data: [14, 19, 24, 29, 34]},
+                                {name: 'Israel', data: [null, 2, 3, 5, 7]}
                             ]}
                         />
                     </div>
