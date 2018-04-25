@@ -20,7 +20,7 @@ class App extends Component {
                     </button>
                 </div>
                 <div className="App" style={this.state.dark ? ({background: 'black'}) : ({background: 'white'})}>
-                    <div class="chart">
+                    <div className="chart">
                         <BarChart
                             title={'Population of largest Turkey cities (in millions)'}
                             subtitle={'according to 2015 estimates'}
@@ -28,7 +28,7 @@ class App extends Component {
                             data={[14000000, 4700000, 2800000, 1900000, 1600000]}
                         />
                     </div>
-                    <div class="chart">
+                    <div className="chart">
                         <PieChart
                             title={'Spread of population in top 5 districts in Kayseri '}
                             data={[
