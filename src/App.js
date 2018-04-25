@@ -69,8 +69,8 @@ class App extends Component {
                 </div>
                 <div className="chart">
                     <BubbleChart
-                        title={{text: 'BUBBLE'}}
-                        subtitle={{text: 'chart'}}
+                        title={{text: 'Sugar and fat intake per country'}}
+                        subtitle={{text: 'data taken from https://jsfiddle.net/gh/get/library/pure/highcharts/highcharts/tree/master/samples/highcharts/demo/bubble/'}}
                         xAxis={{
                             gridLineWidth: 1,
                             per: 'day',
