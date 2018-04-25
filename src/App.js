@@ -64,7 +64,8 @@ class App extends Component {
                             series={[
                                 {label: 'Turkey', data: [21, 30, 43, 58, 71]},
                                 {label: 'Germany', data: [69, 75, 78, 81, 80]},
-                                {label: 'Canada', data: [14, 19, 24, 29, 34]}
+                                {label: 'Canada', data: [14, 19, 24, 29, 34]},
+                                {label: 'Israel', data: [null, 2, 3, 5, 7]}
                             ]}
                         />
                     </div>
