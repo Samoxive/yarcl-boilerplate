@@ -11,15 +11,13 @@ class App extends Component {
     render() {
         return (
             <div className="App" style={this.state.dark ? ({background: 'black'}) : ({background: 'white'})}>
-                <div style={{margin: '8px 400px 8px 400px'}}>
+                <div class="chart">
                     <button onClick={() => this.setState({...this.state, donut: !this.state.donut})}>
                         Toggle donut/pie chart
                     </button>
                     <button onClick={() => this.setState({...this.state, dark: !this.state.dark})}>
                         Toggle background
                     </button>
-                </div>
-                <div class="chart">
                     <BarChart
                         title={'Population of largest Turkey cities (in millions)'}
                         subtitle={'according to 2015 estimates'}
