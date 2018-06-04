@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { PieChart, LineChart, BarChart, AreaChart, BubbleChart, HeatmapChart, StackedAreaChart } from '../../yarcl';
+import { PieChart, LineChart, BarChart, AreaChart, BubbleChart, HeatmapChart, StackedAreaChart, BarChartVertical } from '../../yarcl';
 import './App.css';
 
 class App extends Component {
@@ -35,10 +35,18 @@ class App extends Component {
                                 {label: 'Melikgazi', value: 562000},
                                 {label: 'Kocasinan', value: 394000},
                                 {label: 'Talas', value: 155000},
-                                {label: 'Develi', value: 64000},
+                                {label: 'Develi', value: 90000},
                                 {label: 'Yahyalı', value: 36000},
                             ]}
                             options={{ isDonut: this.state.donut }}
+                        />
+                    </div>
+                    <div className="chart">
+                        <BarChartVertical
+                            title={'Population of largest Turkey cities (in millions)'}
+                            subtitle={'according to 2015 estimates'}
+                            label={['İstanbul', 'Ankara', 'İzmir', 'Bursa', 'Adana']}
+                            data={[14000000, 4700000, 2800000, 1900000, 1600000]}
                         />
                     </div>
                     <div className="chart">
